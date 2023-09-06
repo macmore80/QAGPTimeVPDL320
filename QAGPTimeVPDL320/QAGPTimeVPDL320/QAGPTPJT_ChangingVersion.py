@@ -47,8 +47,12 @@ print('End : Complete update ViDi version in packages.config')
 
 print("1. Start the modification of VPDL Version in csproj file. \n")
 #testVersion = "7.0.0.00000"
-testVersion = "7.0.1.27813" ## It is the build version of VPDL example when JK tested in the old PC.
-csproj_filename = "QAGPTPJT.csproj"
+#testVersion = "7.0.1.27813" ## It is the build version of VPDL example when JK tested in the old PC.
+testVersion = "7.2.0.28864" ## 2023.09.06 - For VPDL 3.2 , JK modified code
+
+#csproj_filename = "QAGPTPJT.csproj"
+csproj_filename = "QAGPTimeVPDL320.csproj"## 2023.09.06 - For VPDL 3.2 , JK modified code
+
 csproj_path = os.path.join(os.getcwd(), csproj_filename)
 namespace = "" 
 namespace_prefix = ""
