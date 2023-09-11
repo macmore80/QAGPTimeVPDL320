@@ -21,7 +21,7 @@ namespace QAGPTimeVPDL320
 {
     static class Constants
     {
-        public const int RepeatProcess = 15000; // When initialised variabl, if It include 'const' in type string, This value never change.        
+        public const int RepeatProcess = 10000; // When initialised variabl, if It include 'const' in type string, This value never change.        
     }
 
     public static class TestConfigurationItems
@@ -317,7 +317,7 @@ namespace QAGPTimeVPDL320
                 control.InitializeComputeDevices(GpuMode.SingleDevicePerTool, new List<int>() { });
 
                 // JK Add code line to use the fixing GPU clock - 2023.09.11 - start
-                //control.StabilizeComputeDevices(ViDi2.StabilizeMode.On);
+                control.StabilizeComputeDevices(ViDi2.StabilizeMode.On);
                 // JK Add code line to use the fixing GPU clock - 2023.09.11 - end
 
                 /* Getting configuration in system e.g., GPU model, Driver Version, OS etc - It's next task*/
