@@ -21,7 +21,7 @@ namespace QAGPTimeVPDL320
 {
     static class Constants
     {
-        public const int RepeatProcess = 25000; // When initialised variabl, if It include 'const' in type string, This value never change.        
+        public const int RepeatProcess = 15000; // When initialised variabl, if It include 'const' in type string, This value never change.        
     }
 
     public static class TestConfigurationItems
@@ -316,6 +316,10 @@ namespace QAGPTimeVPDL320
                 Console.WriteLine($"\n - initialize GPU Device");
                 control.InitializeComputeDevices(GpuMode.SingleDevicePerTool, new List<int>() { });
 
+                // JK Add code line to use the fixing GPU clock - 2023.09.11 - start
+                //control.StabilizeComputeDevices(ViDi2.StabilizeMode.On);
+                // JK Add code line to use the fixing GPU clock - 2023.09.11 - end
+
                 /* Getting configuration in system e.g., GPU model, Driver Version, OS etc - It's next task*/
                 List<string> TestConfigurationList = new List<string>();
                 string tempLine = " ";
@@ -482,9 +486,9 @@ namespace QAGPTimeVPDL320
                 List<string> BlueLocateTimeList = new List<string>();
                 //string pathRuntime_BlueLocate = "..\\..\\..\\..\\..\\TestResource\\Runtime\\6_BlueLocate.vrws"; // 기존 사용
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_BlueLocate = "..\\..\\..\\..\\..\\TestResource\\Runtime\\1_BlueLocate_VPDL311_28557.vrws";
+                string pathRuntime_BlueLocate = "..\\..\\..\\..\\..\\TestResource\\Runtime\\1_BlueLocate_VPDL311_28557.vrws";
 
-                string pathRuntime_BlueLocate = "..\\..\\..\\..\\..\\TestResource\\Runtime\\1_BlueLocate_VPDL320_28864.vrws";
+                //string pathRuntime_BlueLocate = "..\\..\\..\\..\\..\\TestResource\\Runtime\\1_BlueLocate_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
                 Console.WriteLine(" - Runtime Path: {0}", pathRuntime_BlueLocate);// Index: control.ComputeDevices[0].Index.ToString()
                 ViDi2.Runtime.IWorkspace workspaceBlueLocate = control.Workspaces.Add("workspaceBlueLocate", pathRuntime_BlueLocate);
@@ -611,9 +615,9 @@ namespace QAGPTimeVPDL320
                 List<string> BlueReadTimeList = new List<string>();
                 //string pathRuntime_BlueRead = "..\\..\\..\\..\\..\\TestResource\\Runtime\\7_BlueRead.vrws";
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_BlueRead = "..\\..\\..\\..\\..\\TestResource\\Runtime\\2_BlueRead_VPDL311_28557.vrws";
+                string pathRuntime_BlueRead = "..\\..\\..\\..\\..\\TestResource\\Runtime\\2_BlueRead_VPDL311_28557.vrws";
 
-                string pathRuntime_BlueRead = "..\\..\\..\\..\\..\\TestResource\\Runtime\\2_BlueRead_VPDL320_28864.vrws";
+                //string pathRuntime_BlueRead = "..\\..\\..\\..\\..\\TestResource\\Runtime\\2_BlueRead_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
 
 
@@ -704,9 +708,9 @@ namespace QAGPTimeVPDL320
                 List<string> GreenHDMTimeList = new List<string>();
                 //string pathRuntime_Greem_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\1_Green_HighDetailMode.vrws";
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_Greem_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\3_Green_HighDetailMode_VPDL311_28557.vrws";
+                string pathRuntime_Greem_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\3_Green_HighDetailMode_VPDL311_28557.vrws";
                 
-                string pathRuntime_Greem_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\3_Green_HighDetailMode_VPDL320_28864.vrws";
+                //string pathRuntime_Greem_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\3_Green_HighDetailMode_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
 
 
@@ -786,9 +790,9 @@ namespace QAGPTimeVPDL320
                 //string pathRuntime_Greem_Focused = "..\\..\\..\\..\\..\\TestResource\\Runtime\\2_Green_FocusedMode.vrws";
 
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_Greem_Focused = "..\\..\\..\\..\\..\\TestResource\\Runtime\\4_Green_FocusedMode_VPDL311_28557.vrws";
+                string pathRuntime_Greem_Focused = "..\\..\\..\\..\\..\\TestResource\\Runtime\\4_Green_FocusedMode_VPDL311_28557.vrws";
 
-                string pathRuntime_Greem_Focused = "..\\..\\..\\..\\..\\TestResource\\Runtime\\4_Green_FocusedMode_VPDL320_28864.vrws";
+                //string pathRuntime_Greem_Focused = "..\\..\\..\\..\\..\\TestResource\\Runtime\\4_Green_FocusedMode_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
 
                 Console.WriteLine(" - Runtime Path: {0}", pathRuntime_Greem_Focused);// Index: control.ComputeDevices[0].Index.ToString()
@@ -848,9 +852,9 @@ namespace QAGPTimeVPDL320
                 //string pathRuntime_Greem_HDMQ = "..\\..\\..\\..\\..\\TestResource\\Runtime\\3_Green_HighDetailModeQuick.vrws";
 
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_Greem_HDMQ = "..\\..\\..\\..\\..\\TestResource\\Runtime\\5_Green_HighDetailModeQuick_VPDL311_28557.vrws";
+                string pathRuntime_Greem_HDMQ = "..\\..\\..\\..\\..\\TestResource\\Runtime\\5_Green_HighDetailModeQuick_VPDL311_28557.vrws";
 
-                string pathRuntime_Greem_HDMQ = "..\\..\\..\\..\\..\\TestResource\\Runtime\\5_Green_HighDetailModeQuick_VPDL320_28864.vrws";
+                //string pathRuntime_Greem_HDMQ = "..\\..\\..\\..\\..\\TestResource\\Runtime\\5_Green_HighDetailModeQuick_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
 
                 Console.WriteLine(" - Runtime Path: {0}", pathRuntime_Greem_HDMQ);// Index: control.ComputeDevices[0].Index.ToString()
@@ -910,9 +914,9 @@ namespace QAGPTimeVPDL320
                 //string pathRuntime_Red_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\1_RED_HighDetailMode.vrws";
 
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_Red_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\6_RED_HighDetailMode_VPDL311_28557.vrws";
+                string pathRuntime_Red_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\6_RED_HighDetailMode_VPDL311_28557.vrws";
 
-                string pathRuntime_Red_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\6_RED_HighDetailMode_VPDL320_28864.vrws";
+                //string pathRuntime_Red_HDM = "..\\..\\..\\..\\..\\TestResource\\Runtime\\6_RED_HighDetailMode_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
 
                 Console.WriteLine(" - Runtime Path: {0}", pathRuntime_Red_HDM);// Index: control.ComputeDevices[0].Index.ToString()
@@ -1003,9 +1007,9 @@ namespace QAGPTimeVPDL320
                 //string pathRuntime_Red_FSu = "..\\..\\..\\..\\..\\TestResource\\Runtime\\2_RED_FocusedSupervised.vrws";
 
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_Red_FSu = "..\\..\\..\\..\\..\\TestResource\\Runtime\\7_RED_FocusedSupervised_VPDL311_28557.vrws";
+                string pathRuntime_Red_FSu = "..\\..\\..\\..\\..\\TestResource\\Runtime\\7_RED_FocusedSupervised_VPDL311_28557.vrws";
 
-                string pathRuntime_Red_FSu = "..\\..\\..\\..\\..\\TestResource\\Runtime\\7_RED_FocusedSupervised_VPDL320_28864.vrws";
+                //string pathRuntime_Red_FSu = "..\\..\\..\\..\\..\\TestResource\\Runtime\\7_RED_FocusedSupervised_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
 
 
@@ -1074,9 +1078,9 @@ namespace QAGPTimeVPDL320
                 //string pathRuntime_Red_FUn = "..\\..\\..\\..\\..\\TestResource\\Runtime\\3_RED_FocusedUnsupervised.vrws";               
 
                 // JK-Modified-2023 07.24 - Start
-                //string pathRuntime_Red_FUn = "..\\..\\..\\..\\..\\TestResource\\Runtime\\8_RED_FocusedUnsupervised_VPDL311_28557.vrws";
+                string pathRuntime_Red_FUn = "..\\..\\..\\..\\..\\TestResource\\Runtime\\8_RED_FocusedUnsupervised_VPDL311_28557.vrws";
 
-                string pathRuntime_Red_FUn = "..\\..\\..\\..\\..\\TestResource\\Runtime\\8_RED_FocusedUnsupervised_VPDL320_28864.vrws";
+                //string pathRuntime_Red_FUn = "..\\..\\..\\..\\..\\TestResource\\Runtime\\8_RED_FocusedUnsupervised_VPDL320_28864.vrws";
                 // JK-Modified-2023 07.24 - End
 
 

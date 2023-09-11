@@ -159,26 +159,26 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ViDi.NET, Version=7.2.0.28864, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
-      <HintPath>..\packages\ViDi.NET.7.2.0.28864\lib\netstandard2.0\ViDi.NET.dll</HintPath>
+    <Reference Include="ViDi.NET, Version=7.2.0.28943, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
+      <HintPath>..\packages\ViDi.NET.7.2.0.28943-DEV\lib\netstandard2.0\ViDi.NET.dll</HintPath>
     </Reference>
-    <Reference Include="ViDi.NET.Base, Version=7.2.0.28864, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
-      <HintPath>..\packages\ViDi.NET.Base.7.2.0.28864\lib\netstandard2.0\ViDi.NET.Base.dll</HintPath>
+    <Reference Include="ViDi.NET.Base, Version=7.2.0.28943, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
+      <HintPath>..\packages\ViDi.NET.Base.7.2.0.28943-DEV\lib\netstandard2.0\ViDi.NET.Base.dll</HintPath>
     </Reference>
-    <Reference Include="ViDi.NET.Common, Version=7.2.0.28864, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
-      <HintPath>..\packages\ViDi.NET.Common.7.2.0.28864\lib\netstandard2.0\ViDi.NET.Common.dll</HintPath>
+    <Reference Include="ViDi.NET.Common, Version=7.2.0.28943, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
+      <HintPath>..\packages\ViDi.NET.Common.7.2.0.28943-DEV\lib\netstandard2.0\ViDi.NET.Common.dll</HintPath>
     </Reference>
-    <Reference Include="ViDi.NET.Data, Version=7.2.0.28864, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
-      <HintPath>..\packages\ViDi.NET.Data.7.2.0.28864\lib\netstandard2.0\ViDi.NET.Data.dll</HintPath>
+    <Reference Include="ViDi.NET.Data, Version=7.2.0.28943, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
+      <HintPath>..\packages\ViDi.NET.Data.7.2.0.28943-DEV\lib\netstandard2.0\ViDi.NET.Data.dll</HintPath>
     </Reference>
-    <Reference Include="ViDi.NET.Interfaces, Version=7.2.0.28864, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
-      <HintPath>..\packages\ViDi.NET.Interfaces.7.2.0.28864\lib\netstandard2.0\ViDi.NET.Interfaces.dll</HintPath>
+    <Reference Include="ViDi.NET.Interfaces, Version=7.2.0.28943, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
+      <HintPath>..\packages\ViDi.NET.Interfaces.7.2.0.28943-DEV\lib\netstandard2.0\ViDi.NET.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="ViDi.NET.Local, Version=7.2.0.28864, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
-      <HintPath>..\packages\ViDi.NET.Local.7.2.0.28864\lib\netstandard2.0\ViDi.NET.Local.dll</HintPath>
+    <Reference Include="ViDi.NET.Local, Version=7.2.0.28943, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
+      <HintPath>..\packages\ViDi.NET.Local.7.2.0.28943-DEV\lib\netstandard2.0\ViDi.NET.Local.dll</HintPath>
     </Reference>
-    <Reference Include="ViDi.NET.Logging, Version=7.2.0.28864, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
-      <HintPath>..\packages\ViDi.NET.Logging.7.2.0.28864\lib\netstandard2.0\ViDi.NET.Logging.dll</HintPath>
+    <Reference Include="ViDi.NET.Logging, Version=7.2.0.28943, Culture=neutral, PublicKeyToken=af17e7056638eaaa, processorArchitecture=AMD64">
+      <HintPath>..\packages\ViDi.NET.Logging.7.2.0.28943-DEV\lib\netstandard2.0\ViDi.NET.Logging.dll</HintPath>
     </Reference>
     <Reference Include="WibuCmNET, Version=7.0.3933.502, Culture=neutral, PublicKeyToken=01d86e1eb0c69c23, processorArchitecture=MSIL">
       <HintPath>..\packages\Wibu.CodeMeter.WibuCmNET.7.0.3933.502\lib\netstandard2.0\WibuCmNET.dll</HintPath>
